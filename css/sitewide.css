@@ -1,0 +1,397 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-size: 16px;
+	color: #31363a;
+	line-height: 2em;
+	height: auto;
+}
+
+h1 {
+	font-family: "Crimson Text", serif;
+	font-weight: bold;
+	font-size: 80px;
+	color: #435D77;
+}
+
+h2{
+	font-family: "Crimson Text", serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: #435D77;
+	line-height: 1.5em;
+}
+
+h3{
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #636e76;
+	margin-top: 0;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+h4{
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #636e76;
+	padding-top: 0;
+	margin-top: 1em;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+
+h5{
+	font-family: "Crimson Text", serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: #435D77;
+	line-height: 1.5em;
+	margin: 0;
+}
+p{
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-size: 19px;
+	font-weight: normal;
+	color: #31363a;
+	line-height: 2.3em;
+	margin-top: 25;
+	margin-bottom: 0;
+
+}
+
+strong{
+	color: #435D77;
+	font-weight: bold;
+}
+
+a{
+	color: #18222a;
+	text-decoration: none;
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+a:visited {
+	color: #18222a;
+	text-decoration: none;
+}
+
+.active {
+	color: #18222a;
+	border-bottom: 5px solid;
+	padding-top: 2%;
+}
+
+img {
+
+	padding-bottom: 3.5%;
+
+}
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	padding: 0;
+	background-color: #fff;
+}
+
+.background_img{
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+/* Begin Navigation */
+	.navigation{
+		display: inline-block;
+		word-spacing: 3em;
+		color: #18222a;
+		padding-left: 1em;
+
+	}
+
+	.navigation ul {
+		list-style-type: none;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+/* End Navigation */
+
+.main{
+	margin-top: 10%;
+	margin-left: 22%;
+	margin-right: 22%;
+	margin-bottom: 5%;
+}
+
+.main2{
+	margin-left: 22%;
+	margin-right: 22%;
+	margin-bottom:0;
+	padding-bottom: 3%;
+	height: auto;
+}
+
+.body_grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 5%;
+	grid-row-gap: 5%;
+	margin-bottom: 3%;
+
+}
+
+.body_grid_1{
+	grid-column: 1/2;
+	margin: 0;
+}
+
+.body_grid_2{
+	grid-column: 2/3;
+	grid-row-gap: 10%;
+	margin: 0;
+
+}
+
+.grid_3column{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2%;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 3%;
+}
+
+.grid_4column{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 5%;
+		grid-row-gap: 5%;
+		margin-bottom: 3%;
+	}
+
+.img_spacing{
+	padding-top: 3%;
+	margin-bottom: 0;
+}
+
+
+/* BEGIN Pull Quote */
+.pull_quote{
+	background-color: #e9eaec;
+	width: 100%;
+	margin-bottom: 5%;
+	z-index: 1;
+	position: relative;
+}
+
+.pull_quote p{
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #18222a;
+	letter-spacing: 0.01em;
+	line-height: 2em;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.pull_quote2{
+	font-family: "Montserrat", "Lato", sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+	color: #435D77;
+	letter-spacing: 0.01em;
+	line-height: 2em;
+	padding-bottom: 2%;
+}
+/* END Pull Quote */
+
+/* Home Page */
+.home_header_img{
+	padding: 0;
+	margin: 0;
+}
+
+.home_main{
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 0;
+	padding-bottom: 3%;
+}
+/* End Home Page */
+
+/* Begin History Page */
+
+.history_3{
+	grid-column: 1/3;
+	margin-top: 0%;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0;
+
+
+}
+/* End History Page */
+
+/* Begin Geography Page */
+.map{
+	display:inline-flex;
+	/* margin-left: 20%;
+	margin-right: 20%; */
+	margin-top: 4%;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+
+}
+/* End Geography Page */
+
+/* Begin Demographics */
+
+.body_grid_3{
+	grid-column: 2/5;
+	margin-top: 0;
+
+}
+/* End Demographics */
+
+/* Begin Overlapping Images */
+.overlap_img1{
+	z-index: 2;
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 4%;
+}
+
+.overlap_img2{
+	z-index: 2;
+	position: absolute;
+	margin-top: -15%;
+	margin-right: 4%;
+	padding-left: 85%;
+}
+/* End Overlapping Images */
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+		width: 100%;
+		/* max-width: 1980px; */
+		margin: 0;
+		padding: 0;
+		border: 1px solid #f0f0f0;
+	}
+	.background_img{
+		background-image: url("../img/background.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		margin: 0;
+		padding: 0;
+	}
+
+} /* end media query */
+
+
+@media (max-width: 1300px) {
+
+	/* container on smaller screens */
+	.main{
+		margin-top: 10%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 5%;
+	}
+
+	.main2{
+		margin-top: 0;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 0;
+	}
+
+	.body_grid{
+		margin-top: 0;
+		margin-bottom: 5%;
+		padding:0;
+		grid-template-columns: 1fr;
+	}
+
+	.body_grid_1{
+		grid-column: 1/2;
+	}
+
+	.body_grid_2{
+		grid-column: 1/2;
+	}
+
+	.overlap_img1{
+	visibility: hidden;
+	}
+	.overlap_img2{
+	visibility: hidden;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	h1 {
+		font-family: "Crimson Text", serif;
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 1em;
+		color: #435D77;
+	}
+
+
+}
